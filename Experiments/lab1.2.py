@@ -1,3 +1,6 @@
+#ArunSanyal_9523_BatchA
+#HeuristicApproach
+
 import random
 
 def print_board(board):

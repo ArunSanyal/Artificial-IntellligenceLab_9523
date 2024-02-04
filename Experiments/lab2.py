@@ -1,3 +1,6 @@
+#ArunSanyal_9523_BatchA
+#MagicSquare
+
 import random
 
 # Function to print the Tic Tac Toe board
