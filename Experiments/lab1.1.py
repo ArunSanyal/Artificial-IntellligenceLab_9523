@@ -134,3 +134,75 @@ def computer_turn():
 
 if __name__ == '__main__':
     main()
+
+
+# OUTPUT:
+
+# Game started
+#   |   |  
+# ---------
+#   |   |  
+# ---------
+#   |   |  
+# Player turn
+# Enter a position (1-9)  5
+#   |   |  
+# ---------
+#   | X |  
+# ---------
+#   |   |  
+# Computer turn
+#   |   |  
+# ---------
+#   | X |  
+# ---------
+#   |   | O
+# Player turn
+# Enter a position (1-9)  3
+#   |   | X
+# ---------
+#   | X |  
+# ---------
+#   |   | O
+# Computer turn
+#   |   | X
+# ---------
+#   | X |  
+# ---------
+# O |   | O
+# Player turn
+# Enter a position (1-9)  8
+#   |   | X
+# ---------
+#   | X |  
+# ---------
+# O | X | O
+# Computer turn
+#   | O | X
+# ---------
+#   | X |  
+# ---------
+# O | X | O
+# Player turn
+# Enter a position (1-9)  4
+#   | O | X
+# ---------
+# X | X |  
+# ---------
+# O | X | O
+# Computer turn
+#   | O | X
+# ---------
+# X | X | O
+# ---------
+# O | X | O
+# Player turn
+# Enter a position (1-9)  1
+# X | O | X
+# ---------
+# X | X | O
+# ---------
+# O | X | O
+# Computer turn
+# Tie game
+# Game ended
