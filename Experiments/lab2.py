@@ -84,3 +84,61 @@ def play_game():
 
 # Start the game
 play_game()
+
+
+# OUTPUT:
+# Welcome to Tic Tac Toe with Magic Square Method!
+#   |   |
+#   |   |
+#   |   |
+# Enter row (1, 2, or 3): 1
+# Enter column (1, 2, or 3): 2
+#   | X |
+# ---------
+#   |   |
+#   |   |
+# Computer's move:
+#   | X |
+# ---------
+#   | O |
+# ---------
+#   |   |
+# Enter row (1, 2, or 3): 3
+# Enter column (1, 2, or 3): 2
+#   | X |
+#   | O |
+# ---------
+#   | X |
+# Computer's move:
+# O | X |
+# ---------
+#   | O |
+# ---------
+#   | X |
+# Enter row (1, 2, or 3): 2
+# Enter column (1, 2, or 3): 1
+# O | X |
+# ---------
+# X | O |
+# ---------
+#   | X |
+# Computer's move:
+# O | X | O
+# ---------
+# X | O |
+# ---------
+#   | X |
+# Enter row (1, 2, or 3): 2
+# Enter column (1, 2, or 3): 3
+# O | X | O
+# ---------
+# X | O | X
+# ---------
+#   | X |
+# Computer's move:
+# O | X | O
+# ---------
+# X | O | X
+# ---------
+# O | X |
+# Computer wins! Better luck next time.
