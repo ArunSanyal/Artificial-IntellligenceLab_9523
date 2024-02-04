@@ -122,3 +122,29 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# OUTPUT:
+# Tic-Tac-Toe Game
+     
+     
+     
+
+# Enter your move (row col):  2 0
+# Computer's turn
+# O    
+     
+# X    
+
+# Enter your move (row col):  1 1
+# Computer's turn
+# O   O
+#   X  
+# X    
+
+# Enter your move (row col):  2 2
+# Computer's turn
+# O O O
+#   X  
+# X   X
+
+# Computer wins!
