@@ -1,3 +1,6 @@
+#ArunSanyal_9523_BatchA
+#SolvingMissionariesAndCannibalsUsingDFS
+
 class State:
     def __init__(self, missionaries, cannibals, boat_position):
         self.missionaries = missionaries
@@ -85,6 +88,7 @@ def print_state_description(state):
     right_shore = f"{3 - state.missionaries} Missionaries and {3 - state.cannibals} Cannibals on the Right Shore"
 
     print(f"{left_shore}, {right_shore}\n")
+
 
 
 if __name__ == "__main__":
