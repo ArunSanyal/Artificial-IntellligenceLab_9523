@@ -1,0 +1,65 @@
+Arun_9523_BatchA
+POSTLAB:
+
+1. What is the difference between A* and AO* algorithm?
+A* and AO* are both search algorithms commonly used in artificial intelligence and robotics for 
+pathfinding in graphs or trees. However, they have different approaches and objectives:
+
+A Algorithm*:
+    A* (pronounced "A star") is a heuristic search algorithm that finds the shortest path from a starting 
+    node to a target node in a weighted graph, where the weight of each edge represents the cost of moving 
+    from one node to another.
+    It uses a heuristic function (often denoted as h) to estimate the cost from the current node to the target node. 
+    This heuristic guides the search towards the most promising nodes, making A* efficient.
+    A* employs both the actual cost from the start node (denoted as g) and the estimated cost to the target node to determine
+    the priority of nodes for exploration.
+    A* is widely used in various applications requiring pathfinding, such as navigation systems, video games, and robotics.
+
+AO Algorithm*:
+    AO* (Adaptive A*) is an extension of the A* algorithm designed to handle situations where the heuristic function 
+    may not always provide accurate estimates.
+    In AO*, the heuristic function is initially set to an optimistic estimate, often overestimating the cost to reach the target node.
+    This overestimation ensures that AO* always finds an optimal solution if one exists.
+    As the search progresses, AO* updates the heuristic estimates based on the actual costs encountered during the search, gradually 
+    refining its estimates.
+    AO* dynamically adapts the heuristic estimates
+
+
+
+
+
+
+
+
+
+2. Why AO* algorithm only works when heuristic values are underestimated?
+    AO* algorithm only working with underestimated heuristic values is not entirely accurate.
+    While underestimation is a crucial property for guaranteeing optimal solutions with AO*, it's
+    not the sole factor. Here's the clarification:
+
+    AO and Heuristic Functions:
+    AO* (Anytime Optimal) is a real-time search algorithm designed for dynamic environments
+    where the cost of moving between nodes can change over time.
+    Like A*, it relies on a heuristic function to estimate the remaining cost (h-value) from a
+    current state to the goal.
+
+    Requirement for Optimality:
+    Admissibility: The heuristic used in both A* and AO* needs to be admissible. This means the
+    h-value (estimated cost) must never be greater than the actual cost to reach the goal from
+    any given state.
+    Monotonicity: While underestimation is desirable for guaranteed optimality in A*, AO* only
+    requires monotonicity. This means the h-value should never decrease as you move towards
+    the goal state.
+
+    Underestimation and Optimality:
+    In A*, underestimation guarantees finding the optimal path if the search process is allowed to
+    complete. This is because underestimation ensures the algorithm never discards a path that
+    could potentially lead to the optimal solution.
+    However, in dynamic environments, completing the search may not be feasible due to
+    constant changes. AO* addresses this by providing anytime optimality.
+
+    Anytime Optimality with Monotonicity:
+    With a monotonic heuristic, AO* can guarantee optimality at any point during the search,
+    even if the search is interrupted. This is because the algorithm prioritizes exploring paths
+    with lower estimated costs, and due to monotonicity, these paths cannot lead to suboptimal
+    solutions, even if the actual cost changes in the future.

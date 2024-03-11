@@ -1,0 +1,27 @@
+Arun_9523_BatchA
+POSTLAB:
+
+1. What is the time complexity of the Water Jug problem?
+In the worst-case scenario, we would need to visit every possible state to find a solution.
+Each state has six possible next states (filling, emptying, or pouring each jug), so the
+branching factor is 6. Therefore, the time complexity is exponential, O(6^d), where d is the
+depth of the search tree.
+
+
+2. Why is DFS not used for solving a water jug problem?
+Depth-First Search (DFS) is not typically used for solving the water jug problem efficiently
+because DFS tends to search deeply into the search space before considering other
+branches. In the water jug problem, the search space can be quite large, and DFS may end
+up exploring a large portion of it before finding a solution, which can be inefficient.
+The water jug problem involves finding a sequence of steps to measure out a certain volume
+of water using jugs of different capacities. The state space in this problem consists of all
+possible combinations of water levels in the jugs. While DFS can be used to solve the
+problem, it may not be the most efficient approach because it doesn't prioritize exploring the
+most promising paths first.
+A more efficient approach for solving the water jug problem is using breadth-first search
+(BFS) or other optimized search algorithms such as A* search. These algorithms explore the
+search space more systematically, considering all possible moves at each level before
+moving on to the next level. BFS, in particular, explores all possible solutions of a given
+length before considering longer solutions, ensuring that the first solution found is the
+shortest one.
+
